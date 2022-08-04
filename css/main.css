@@ -1,0 +1,217 @@
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Darkish-cyan: hsl(156, 42%, 18%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--Cream);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Small */
+@media (min-width: 370px) {
+    .container {
+        width: 350px;
+        padding-left: 0.313rem;
+        padding-right: 0.313rem;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* End Global Rules */
+/* Start Main */
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main .container {
+    display: flex;
+    justify-content: center;
+}
+
+main .container .content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    main .container .content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+main .container .content .image {
+    width: 300px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    main .container .content .image {
+        width: 335px;
+    }
+}
+
+main .container .content .main-img {
+    max-width: 100%;
+}
+
+main .container .content .main-img2 {
+    display: none;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    main .container .content .main-img {
+        display: none;
+    }
+
+    main .container .content .main-img2 {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+main .container .content .box {
+    width: 300px;
+    height: 450px;
+    background-color: var(--White);
+    padding: 0 1.875rem;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    main .container .content .box {
+        width: 335px;
+        height: auto;
+        padding: 0 1.563rem;
+    }
+}
+
+main .container .content .box .title {
+    display: block;
+    color: var(--Dark-grayish-blue);
+    margin-top: 1.563rem;
+    letter-spacing: 0.313rem;
+}
+
+main .container .content .box h1 {
+    margin: 0.938rem 0 1.25rem;
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    color: var(--Very-dark-blue);
+    line-height: 1;
+}
+
+main .container .content .box p {
+    line-height: 1.7;
+    font-size: 0.875rem;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 1.563rem;
+}
+
+main .container .content .box .price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.563rem;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    main .container .content .box .price {
+        margin-bottom: 0;
+    }
+}
+
+main .container .content .box .price .amount {
+    font-size: 2rem;
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+}
+
+main .container .content .box .price .pre-price {
+    margin-right: 2.5rem;
+    font-size: 0.875rem;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    main .container .content .box .price .pre-price {
+        margin-right: 5rem;
+    }
+}
+
+main .container .content .box a {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    display: block;
+    border: 0.188rem solid transparent;
+    width: fit-content;
+    padding: 0.625rem 3.75rem;
+    margin: 1.25rem auto 1.25rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    main .container .content .box a {
+        padding: 0.625rem 5.3rem;
+        margin: 1.25rem auto 1.25rem;
+    }
+}
+
+main .container .content .box a:hover {
+    background-color: var(--Darkish-cyan);
+}
+
+main .container .content .box a .cart {
+    margin-right: 0.625rem;
+}
+
+/* End Main */
+/* Start Footer */
+footer a:hover {
+    color: var(--Dark-grayish-blue);
+}
+
+/* End Footer */
