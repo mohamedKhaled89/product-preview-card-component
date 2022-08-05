@@ -76,38 +76,23 @@ main .container .content {
     }
 }
 
-main .container .content .image {
+main .content picture {
     width: 300px;
 }
 
 /* Mobile */
 @media (max-width: 767px) {
-    main .container .content .image {
+    main .content picture {
         width: 335px;
     }
 }
 
-main .container .content .main-img {
+main picture img {
     max-width: 100%;
+    margin-bottom: -4px;
 }
 
-main .container .content .main-img2 {
-    display: none;
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-    main .container .content .main-img {
-        display: none;
-    }
-
-    main .container .content .main-img2 {
-        display: block;
-        max-width: 100%;
-    }
-}
-
-main .container .content .box {
+main .content .box {
     width: 300px;
     height: 450px;
     background-color: var(--White);
@@ -116,21 +101,21 @@ main .container .content .box {
 
 /* Mobile */
 @media (max-width: 767px) {
-    main .container .content .box {
+    main .content .box {
         width: 335px;
         height: auto;
         padding: 0 1.563rem;
     }
 }
 
-main .container .content .box .title {
+main .box .title {
     display: block;
     color: var(--Dark-grayish-blue);
     margin-top: 1.563rem;
     letter-spacing: 0.313rem;
 }
 
-main .container .content .box h1 {
+main .box h1 {
     margin: 0.938rem 0 1.25rem;
     font-size: 2rem;
     font-family: 'Fraunces', serif;
@@ -138,14 +123,14 @@ main .container .content .box h1 {
     line-height: 1;
 }
 
-main .container .content .box p {
+main .box p {
     line-height: 1.7;
     font-size: 0.875rem;
     color: var(--Dark-grayish-blue);
     margin-bottom: 1.563rem;
 }
 
-main .container .content .box .price {
+main .box .price {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -154,18 +139,18 @@ main .container .content .box .price {
 
 /* Mobile */
 @media (max-width: 767px) {
-    main .container .content .box .price {
+    main .box .price {
         margin-bottom: 0;
     }
 }
 
-main .container .content .box .price .amount {
+main .box .price .amount {
     font-size: 2rem;
     color: var(--Dark-cyan);
     font-family: 'Fraunces', serif;
 }
 
-main .container .content .box .price .pre-price {
+main .box .price .pre-amount {
     margin-right: 2.5rem;
     font-size: 0.875rem;
     color: var(--Dark-grayish-blue);
@@ -174,12 +159,12 @@ main .container .content .box .price .pre-price {
 
 /* Mobile */
 @media (max-width: 767px) {
-    main .container .content .box .price .pre-price {
+    main .box .price .pre-amount {
         margin-right: 5rem;
     }
 }
 
-main .container .content .box a {
+main .box a {
     background-color: var(--Dark-cyan);
     color: var(--White);
     display: block;
@@ -194,17 +179,17 @@ main .container .content .box a {
 
 /* Mobile */
 @media (max-width: 767px) {
-    main .container .content .box a {
+    main .box a {
         padding: 0.625rem 5.3rem;
         margin: 1.25rem auto 1.25rem;
     }
 }
 
-main .container .content .box a:hover {
+main .box a:hover {
     background-color: var(--Darkish-cyan);
 }
 
-main .container .content .box a .cart {
+main .box a .cart {
     margin-right: 0.625rem;
 }
 
